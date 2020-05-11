@@ -1,3 +1,5 @@
+# Editors
+*.swp
 # Prerequisites
 *.d
 
@@ -29,6 +31,7 @@
 *.dylib
 
 # Executables
+pluto-adsb-sim
 *.exe
 *.out
 *.app
