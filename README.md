@@ -15,9 +15,9 @@ Three mode are available:
 **Don't transmit over the air. Always use cable between emitter and receiver to avoid disturbing real airplanes
 communications!**
 
-### compile
+## compile
 
-#### dependencies
+### dependencies
 This application require [libiio](https://github.com/analogdevicesinc/libiio), [libad9361-iio](https://github.com/analogdevicesinc/libad9361-iio)
 and *pkg-config*
 
@@ -25,13 +25,13 @@ and *pkg-config*
 $ sudo apt install libiio-dev libad9361-dev libad9361-0 libiio0 pkg-config
 ```
 
-#### compile
+### compile
 
 ```bash
 $ make
 ```
 
-### usage
+## usage
 
 ```bash
 Usage: pluto-adsb-sim [options]
@@ -56,7 +56,7 @@ To use **-n** or nothing, you need to have in */etc/hosts* a line like:
 192.168.2.1 pluto pluto.local
 ```
 
-#### Transmit data from file
+### Transmit data from file
 
 To use this mode a file must be provided with *-t* option
 
@@ -75,7 +75,7 @@ __example__
 ./pluto-adsb-sim -f 868 -t maFile.dat
 ```
 
-#### Fake signal generation
+### Fake signal generation
 
 To use this mode, don't provide a data file (no *-t* option)
 
@@ -89,7 +89,7 @@ __example__
 If *-o* is used the *PlutoSDR* is not used. Instead the data stream is written
 in a binary, signed short IQ interleaved format
 
-### Verify with dump1090
+## Verify with dump1090
 
 ```bash
 $ dump1090 --freq 868000000
