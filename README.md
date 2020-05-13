@@ -10,6 +10,11 @@ Three mode are available:
 * Tx stream from fake frame;
 * fake frame or ASCII file to binary file
 
+## Warning
+
+**Don't transmit over the air. Always use cable between emitter and receiver to avoid disturbing real airplanes
+communications!**
+
 ### compile
 
 #### dependencies
